@@ -1,0 +1,7 @@
+<% @posts.each do |post| %>
+  
+  <h2><%= link_to post['data']['title'], post['data']['url'] %></h2>
+
+  <%= image_tag post['data']['thumbnail'] %>
+
+<% end %>
